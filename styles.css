@@ -1,0 +1,101 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* Pushes logo left, links right */
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #132E48;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.navbar-logo img {
+    height: 40px;
+    /* Adjust as needed */
+    width: auto;
+}
+
+/* Menu Links Styling */
+.navbar-links {
+    display: flex;
+    gap: 1.5rem;
+    /* Space between links */
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #CADEED;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #FFFFFF;
+    /* Change to your brand color */
+}
+
+.main {
+    text-align: center;
+    /* Centers all inline content (text, images, etc.) */
+    background-color: #132E48;
+    /* Light gray background (change to any color) */
+    color: #FFFFFF;
+    /* Dark gray text color */
+    font-family: 'Proxima Nova', sans-serif;
+    /* Match your body font */
+    font-size: 1.1rem;
+    /* Base font size (approx 17.6px) */
+    padding: 2rem;
+    /* Add some spacing inside the div */
+    line-height: 1.6;
+    /* Better readability */
+}
+
+/* Style headings inside .main */
+.main h1 {
+    font-size: 2.75rem;
+    /* Larger heading */
+    color: #FFFFFF;
+    /* Dark blue heading color */
+    margin-bottom: 1rem;
+    /* Space below heading */
+}
+
+/* Style paragraphs */
+.main p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    /* Space between paragraphs */
+}
+
+body,
+html {
+    height: 100%;
+}
+
+/* Place text in the middle of the image */
+.title-text {
+    text-align: center;
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Roboto Condensed', 'Proxima Nova', sans-serif;
+}
+
+.title-text h1 {
+    font-size: 6rem;
+    /* 56px */
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    /* Bold */
+}

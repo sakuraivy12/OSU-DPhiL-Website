@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSU Delta Phi Lambda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Proxima Nova', sans-serif;
+        }
+
+        /* Column container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 40px 0;
+            gap: 20px;
+            /* Adds space between cards */
+        }
+
+        /* Individual columns */
+        .column {
+            flex: 1;
+            min-width: 300px;
+            /* Cards will wrap on small screens */
+            padding: 0 15px;
+        }
+
+        .cards-container {
+            background-color: #78A8D9;
+            /* Light gray background */
+            padding: 10px 20px;
+            /* Spacing around cards */
+        }
+
+        /* Card styling */
+        .card {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: left;
+            /* Left-align text like in screenshot */
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Card content styling */
+        .card h2 {
+            color: #2c3e50;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .card p {
+            color: #7f8c8d;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .card a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        .card a::after {
+            content: " →";
+        }
+
+        /* Responsive columns - one column layout (vertical) on small screens */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+
+        body,
+        html {
+            height: 100%;
+        }
+
+        /* The hero image */
+        .hero-image {
+            /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
+            background-image: linear-gradient(rgba(0, 20, 40, 0.2), rgba(0, 10, 30, 0.2)), url("images/homepage.jpeg");
+
+            /* Set a specific height */
+            height: 70%;
+
+            /* Position and center the image to scale nicely on all screens */
+            background-position: center 30%;
+            /* Move visible area vertically */
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* Place text in the middle of the image */
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-family: 'Roboto Condensed', 'Proxima Nova', sans-serif;
+        }
+
+        .hero-text h1 {
+            font-size: 6rem;
+            /* 56px */
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            /* Bold */
+        }
+
+        .hero-text h4 {
+            font-size: 1.5rem;
+            /* 24px */
+            font-weight: 300;
+            /* Light */
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <!-- Logo (left side) -->
+        <div class="navbar-logo">
+            <a href="index.html">
+                <img src="images/DFL Logo - Cloudy Blue.png" alt="Logo">
+            </a>
+        </div>
+
+        <!-- Menu Links (right side) -->
+        <div class="navbar-links">
+            <a href="about.html">About Us</a>
+            <a href="#">Sisters</a>
+            <a href="#">Recruitment</a>
+            <a href="#">Resources</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </nav>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h4>
+                The Ohio State University | Phi Chapter
+            </h4>
+            <h1>
+                Delta Phi Lambda
+            </h1>
+        </div>
+    </div>
+    <div class="main">
+        <h1>
+            We are the Phi Chapter of Delta Phi Lambda Sorority, Inc.<br> at The Ohio State University!
+        </h1>
+        <p>
+            Chartered on March 31st, 2019, at The Ohio State University, our chapter is committed to fostering an
+            inclusive and empowering community for Dedicated Female Leaders. We strive to provide a “home away from
+            home” for women who share our commitment to upholding the seven core virtues of Loyalty, Honesty, Respect,
+            Dedication, Integrity,
+            Discipline, and Academic Excellence. With a focus on advocating for Asian awareness and driving positive
+            change, we are
+            united in our mission to create a lasting impact through Everlasting Sisterhood.
+        </p>
+    </div>
+    <div class="banner">
+        <!-- image here -->
+    </div>
+    <div class="cards-container">
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <h2>
+                        About Us
+                    </h2>
+                    <p>
+                        Learn about our values, history, and the strong bond that makes us more than just a group—we’re
+                        a
+                        Sisterhood!
+                    </p>
+                    <a href="about.html">Learn more</a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h2>
+                        Active House
+                    </h2>
+                    <p>
+                        Meet the incredible women who make our sorority strong, leading with dedication and supporting
+                        each
+                        other every
+                        step of the way.
+                    </p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h2>
+                        Recruitment
+                    </h2>
+                    <p>
+                        Ready to join? Discover how you can become part of our Sisterhood and start your journey with us
+                        today!
+                    </p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+
+</html>
