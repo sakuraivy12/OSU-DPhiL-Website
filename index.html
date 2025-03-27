@@ -16,7 +16,7 @@
         }
 
         /* Column container */
-        .row {
+        .card-row {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -26,7 +26,7 @@
         }
 
         /* Individual columns */
-        .column {
+        .card-column {
             flex: 1;
             min-width: 300px;
             /* Cards will wrap on small screens */
@@ -90,7 +90,7 @@
 
         /* Responsive columns - one column layout (vertical) on small screens */
         @media screen and (max-width: 600px) {
-            .column {
+            .card-column {
                 width: 100%;
                 display: block;
                 margin-bottom: 20px;
@@ -193,8 +193,8 @@
         <!-- image here -->
     </div>
     <div class="cards-container">
-        <div class="row">
-            <div class="column">
+        <div class="card-row">
+            <div class="card-column">
                 <div class="card">
                     <h2>
                         About Us
@@ -207,7 +207,7 @@
                     <a href="about.html">Learn more</a>
                 </div>
             </div>
-            <div class="column">
+            <div class="card-column">
                 <div class="card">
                     <h2>
                         Active House
@@ -221,7 +221,7 @@
                     <a href="">Learn more</a>
                 </div>
             </div>
-            <div class="column">
+            <div class="card-column">
                 <div class="card">
                     <h2>
                         Recruitment

@@ -14,19 +14,15 @@
 
         body {
             font-family: 'Proxima Nova', sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
         /* The title image */
         .title-image {
-            /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
             background-image: linear-gradient(rgba(0, 20, 40, 0.2), rgba(0, 10, 30, 0.2)), url("images/aboutus.JPG");
-
-            /* Set a specific height */
             height: 60%;
-
-            /* Position and center the image to scale nicely on all screens */
             background-position: center 59%;
-            /* Move visible area vertically */
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
@@ -156,39 +152,33 @@
             unity, and our legacy will live on through the works of the sisters.
         </p>
     </div>
-    <div class="row">
-        <div class="column">
-            <div class="card">
-                <h2>
-                    National History
-                </h2>
-                <p>
-                    Curious about our national legacy? Learn more about the rich history and traditions that have shaped
-                    our sisterhood across the country.
-                </p>
-                <a href="">Learn more</a>
+    <div class="card-container">
+        <div class="card-row">
+            <div class="card-column">
+                <div class="card">
+                    <h2>National History</h2>
+                    <p>Curious about our national legacy? Learn more about the rich history and traditions that have
+                        shaped our sisterhood across the country.</p>
+                    <a href="">Learn more →</a>
+                </div>
             </div>
-        </div>
-        <div class="column">
-            <div class="card">
-                <h3>
-                    Chapter History
-                    </h2>
-                    <p>
-                        Want to know more about our chapter’s journey? Explore the milestones and achievements that make
-                        our chapter unique.
-                    </p>
-                    <a href="">Learn more</a>
-            </div>
-            <div class="card">
-                <h3>
-                    Philanthropy & Service
-                </h3>
-                <p>
-                    Interested in giving back? Discover the causes we support and the impact we’re making through our
-                    philanthropy and service projects.
-                </p>
-                <a href="">Learn more</a>
+
+            <div class="card-column">
+                <div class="card">
+                    <h2>Chapter History</h2>
+                    <p>Want to know more about our chapter's journey? Explore the milestones and achievements that make
+                        our chapter unique.</p>
+                    <a href="">Learn more →</a>
+                </div>
+
+                <hr class="card-hr">
+
+                <div class="card">
+                    <h2>Philanthropy + Service</h2>
+                    <p>Interested in giving back? Discover the causes we support and the impact we're making through our
+                        philanthropy and service projects.</p>
+                    <a href="">Learn more →</a>
+                </div>
             </div>
         </div>
     </div>
